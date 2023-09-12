@@ -1,0 +1,9 @@
+<div class="conversation-area">
+  <MessageEntry
+    v-for="message in conversation"
+    :key="message.id"
+    :message="message"
+    :isSentByCurrentUser="message.from.id === currentUser.id"
+  />
+  <Compose @send-message="sendReply" v-model="message" />
+</div>

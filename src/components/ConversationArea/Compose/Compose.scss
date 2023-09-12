@@ -1,0 +1,25 @@
+.compose-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding: 12px 0;
+
+  textarea {
+    flex-grow: 1;
+    margin: 10px;
+    resize: none;
+    border: none;
+    font-size: 16px; // Customize font size as needed
+  }
+
+  button {
+    width: 60px;
+    height: 36px; // Customize button height as needed
+    background-color: #007bff; // Customize button color
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; // Customize button font size as needed
+  }
+}
