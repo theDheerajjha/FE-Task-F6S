@@ -1,11 +1,10 @@
-
-import { defineComponent } from 'vue';
-import MessageEntry from './message/MessageEntry.vue'; 
-import Compose from './Compose/Compose.vue'; 
-import { useStore } from 'vuex';
+import { defineComponent } from "vue";
+import MessageEntry from "./message/MessageEntry.vue";
+import Compose from "./Compose/Compose.vue";
+import { useStore } from "vuex";
 
 export default defineComponent({
-  name: 'ConversationArea',
+  name: "ConversationArea",
   components: {
     MessageEntry,
     Compose,
@@ -15,10 +14,10 @@ export default defineComponent({
 
     const conversation = store.getters.conversation;
     const currentUser = store.getters.currentUser;
-    let message = '';
+    let message = "";
 
     const sendReply = (newMessage) => {
-      store.dispatch('sendReply', newMessage);
+      store.dispatch("sendReply", newMessage);
     };
 
     return {

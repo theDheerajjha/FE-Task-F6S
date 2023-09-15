@@ -1,18 +1,17 @@
-
-import { defineComponent, ref } from 'vue';
-import { useStore } from 'vuex';
+import { defineComponent, ref } from "vue";
+import { useStore } from "vuex";
 
 export default defineComponent({
-  name: 'Compose',
+  name: "Compose",
   setup(props, { emit }) {
-    const message = ref('');
+    const message = ref("");
 
     const handleSubmit = () => {
-      if (message.value.trim() === '') return;
+      if (message.value.trim() === "") return;
 
-      emit('send-message', message.value);
+      emit("send-message", message.value);
 
-      message.value = '';
+      message.value = "";
     };
 
     return {

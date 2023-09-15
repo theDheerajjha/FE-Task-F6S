@@ -17,7 +17,7 @@ export default defineComponent({
   name: "MessageEntry",
   props: {
     message: {
-      type: Object as PropType<any>, 
+      type: Object as PropType<any>,
       required: true,
     },
     isSentByCurrentUser: {
